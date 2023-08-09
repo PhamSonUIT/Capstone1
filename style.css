@@ -3,33 +3,125 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Jost', sans-serif;
 }
 
 /* header  */
-
-header .navbar-nav .nav-item .nav-link {
-    color: white;
+.title h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3f3a64;
+    line-height: 1.4;
 }
-
-.title h2 {
-    color: #9c97c1;
-}
-
-.title p {
+.title p{
+    font-size: 0.9rem;
+    font-weight: 800;
     color: #7e7d7d;
 }
-.button{
-    color: #fff;
-    background-color: #00a63f;
-    border-color: #00a63f;
-    padding: 15px 50px;
-    font-size: 16px;
-    font-weight: 600;
+
+.btn-success{
+    padding: 0.8rem 3rem;
+    border: 1px solid transparent;
     border-radius: 10px;
+    font-weight: bold;
 }
-.button:hover{
-    color: #fff;
-    background-color: #008030;
-    border-color: #00732c;
+
+
+/* Work  */
+
+.work .work-info{
+    display: flex;
 }
+
+.work-left,
+.work-right{
+    width: 48%;
+}
+
+.work-left .content p{
+    color: #838383;
+    line-height: 2;
+    font-size: 1rem;
+    padding: 20px 0px;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    text-align: center;
+    width: 115%;
+    padding-left:45px;
+
+}
+.item{
+    padding: 30px 30px;
+    background-color: white;
+    font-size: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #0000001a;
+}
+
+.work-right .item h4 a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3f3a64;
+    text-decoration: none;
+}
+
+.work-right .item h4 a:hover{
+    color: green;
+}
+
+/* gallery  */
+
+.gallery_content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.gallery-item{
+    position: relative;
+}
+
+.gallery-item img{
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 2rem;
+    z-index: 2;
+    background-color:#2f4354ad;
+    opacity: 0;
+}
+
+.overlay-text{
+    position: absolute;
+    bottom: 2rem;
+    transform: translateY(60px);
+    transition: all 0.5s;
+}
+.gallery-item:hover .overlay-text{
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+
+.overlay-text h4{
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.overlay-text p{
+    font-size: 1.2rem;
+}
+
+.gallery-item:hover .overlay{
+    opacity: 1;
+}
+
