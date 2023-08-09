@@ -8,10 +8,10 @@
 
 /* header  */
 .title h2{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: #3f3a64;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 .title p{
     font-size: 0.9rem;
@@ -24,6 +24,7 @@
     border: 1px solid transparent;
     border-radius: 10px;
     font-weight: bold;
+    transition: all 0.5s;
 }
 
 
@@ -50,9 +51,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 35px;
     text-align: center;
-    width: 115%;
-    padding-left:45px;
-
+    width: 100%;
 }
 .item{
     padding: 30px 30px;
@@ -71,6 +70,12 @@
 
 .work-right .item h4 a:hover{
     color: green;
+}
+
+.work-right .work-list .item:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0 10px 0 #0000005c;
+    transition: all 0.5s;
 }
 
 /* gallery  */
