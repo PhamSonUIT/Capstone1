@@ -72,6 +72,12 @@ ul li{
     grid-row: 2 / span 1;
 }
 
+@media screen and (max-width:767px) {
+    .aboutUS-left{
+        margin: 5%;
+
+    }
+}
 /* Work  */
 
 .work .work-info{
