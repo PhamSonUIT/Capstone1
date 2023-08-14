@@ -5,6 +5,9 @@
     font-size: 16px;
     font-family: 'Jost', sans-serif;
 }
+p{
+    color: grey;
+}
 
 /* header  */
 .title h2{
@@ -34,8 +37,8 @@
 }
 
 .button:hover{
-    color: #fff;
-    background-color: #008030;
+    color: #008030;
+    /* background-color: #008030; */
     border-color: #00732c;
 }
 ul li{
@@ -179,3 +182,33 @@ ul li{
 .gallery-item:hover .overlay{
     opacity: 1;
 }
+.progress-bar{
+    background-color: white;
+
+}
+.progress-bar p{
+    background-color: white;
+    text-align: left;
+    position: relative;
+}
+.progress{
+    height: 5px;
+    margin-bottom: 5%;
+
+}
+.progress-bar p  span{
+    position: absolute;
+    right:0;
+}
+
+#progress .container {
+    display: flex;
+    /* width: 50%; */
+}
+.progress-left img{
+    width: 100%;
+}
+.progress-right{
+    margin-left: 5%;
+}
+
