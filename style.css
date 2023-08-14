@@ -10,6 +10,12 @@ p{
 }
 
 /* header  */
+
+header {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #ffffff45;
+}
 .title h2{
     font-size: 2.2rem;
     font-weight: 700;
@@ -35,6 +41,84 @@ p{
     font-weight: bold;
     transition: all 0.5s;
 }
+
+.navbar .navbar-brand i{
+    font-size: 25px;
+}
+
+.navbar .navbar-brand span{
+    font-size: 30px;
+    font-weight: 600;
+}
+.navbar .navbar-brand p{
+    font-weight: 600;
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* Carousel  */
+
+.carousel-banner{
+    position: relative;
+}
+
+.carousel-img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-slider{
+    width: 1440px;
+    left: -165px;
+    top: -102px;
+    position: relative;
+}
+
+.carousel-content{
+    position: absolute;
+    top: 250px;
+    left: 180px;
+}
+
+.carousel-content h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+    max-width: 800px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.carousel-content p{
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 600px;
+    opacity: .9;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.carousel-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #041529bd;
+}
+
 
 .button:hover{
     color: #008030;
@@ -83,8 +167,16 @@ ul li{
 }
 /* Work  */
 
+.work{
+    background-color:#f7f7f7;
+}
+.work-left{
+    padding-top: 97px;
+}
+
 .work .work-info{
     display: flex;
+    margin-bottom: 50px;
 }
 
 .work-left,
@@ -94,20 +186,20 @@ ul li{
 
 .work-left .content p{
     color: #838383;
-    line-height: 2;
-    font-size: 1rem;
-    padding: 20px 0px;
+    line-height: 1.7;
+    font-size: 17px;
+    padding: 15px 15px;
 }
 
 .work-list{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 35px;
+    gap: 20px;
     text-align: center;
-    width: 100%;
+    width: 115%;
 }
 .item{
-    padding: 30px 30px;
+    padding: 35px 25px;
     background-color: white;
     font-size: 4rem;
     border-radius: 10px;
@@ -179,36 +271,10 @@ ul li{
     font-size: 1.2rem;
 }
 
+.gallery{
+    background-color:#f7f7f7;
+}
+
 .gallery-item:hover .overlay{
     opacity: 1;
 }
-.progress-bar{
-    background-color: white;
-
-}
-.progress-bar p{
-    background-color: white;
-    text-align: left;
-    position: relative;
-}
-.progress{
-    height: 5px;
-    margin-bottom: 5%;
-
-}
-.progress-bar p  span{
-    position: absolute;
-    right:0;
-}
-
-#progress .container {
-    display: flex;
-    /* width: 50%; */
-}
-.progress-left img{
-    width: 100%;
-}
-.progress-right{
-    margin-left: 5%;
-}
-
