@@ -304,10 +304,39 @@ header .navbar .navbar-nav .nav-item .nav-link{
     border-top: 1px solid #0000000d;
     }
     
-    .gallery-logo img{
+.gallery-logo img{
         padding-bottom: 80px;
-    }
-    
+}
+
+.progress-bar{
+    background-color: white;
+
+}
+.progress-bar p{
+    background-color: white;
+    text-align: left;
+    position: relative;
+}
+.progress{
+    height: 5px;
+    margin-bottom: 5%;
+
+}
+.progress-bar p  span{
+    position: absolute;
+    right:0;
+}
+
+#progress .container {
+    display: flex;
+    /* width: 50%; */
+}
+.progress-left img{
+    width: 100%;
+}
+.progress-right{
+    margin-left: 5%;
+}   
     /* Review  */
     
     .review{
