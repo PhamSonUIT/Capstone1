@@ -11,6 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
 
+    <!-- Owl carousel  -->
+    <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.js">
+    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
+
+    <!-- slick slider  -->
+    <link rel="stylesheet" href="./Slick/slick-theme.css">
+    <link rel="stylesheet" href="./Slick/slick.css">
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,11 +33,11 @@
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">
                     <i class="fa-solid fa-align-right text-success"></i>
-                    <span>Corp Vision</span>
-                    <p>Vision to your future</p>
+                    <span class="text-white">Corp Vision</span>
+                    <p class="text-white">Vision to your future</p>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -36,8 +45,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex justify-content-center">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
                         </li>
@@ -61,7 +70,41 @@
         </div>
     </header>
 
-    <section class="carousel"></section>
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel-slider">
+                <div class="carousel-banner">
+                    <div class="carousel-img">
+                        <img src="./images/b1.jpg" alt="">
+                    </div>
+                    <div class="carousel-overlay">
+                        <div class="carousel-content">
+                            <h1>We will solve your issues </br> our vision to your future</h1>
+                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                            <button class="btn-success">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="carousel-banner bg2">
+                    <div class="carousel-content">
+                        <h1>We will solve your issues our vision to your future</h1>
+                        <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                        <button class="btn-success">Learn More</button>
+                    </div>
+                </div>
+                <div class="carousel-banner bg3">
+                    <div class="carousel-content">
+                        <h1>We will solve your issues our vision to your future</h1>
+                        <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                        <button class="btn-success">Learn More</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
     <section class="aboutUS">
         <div class="container">
@@ -94,9 +137,9 @@
         <div class="container py-lg-5 py-md-4 py-2">
             <div class="work-info">
                 <div class="work-left">
-                    <div class="title">
+                    <div class="title col-lg-11 pr-lg-1">
                         <p>EVERY DAY BRINGS NEW CHALLENGES</p>
-                        <h2>Creative agency focused on vision, product and people</h2>
+                        <h2 class="mb-4">Creative agency focused on vision, product and people</h2>
                     </div>
                     <div class="content">
                         <p>Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est.
@@ -106,7 +149,7 @@
                         <button class="btn-success">Discover More</button>
                     </div>
                 </div>
-                <div class="work-right">
+                <div class="work-right col-lg-6 mt-lg-0 mt-md-5 mt-4 pt-5 pl-5">
                     <div class="work-list">
                         <div class="item">
                             <img src="./images/icon1.png" alt="">
@@ -165,9 +208,9 @@
         </div>
     </section>
 
-    <section class="gallery mt-">
-        <div class="container">
-            <div class="title text-center">
+    <section class="gallery py-5">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="title text-center mb-5">
                 <p>OUR GALLERY</p>
                 <h2>Successful projects we've done</h2>
             </div>
@@ -251,21 +294,21 @@
                     </div>
                 </div>
             </div>
-            <div class="gallary-logo pt-5 mt-5  d-flex justify-content-center">
+            <div class="gallery-logo pt-5 mt-5 d-flex justify-content-center">
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./images/brand1.png" alt="">
+                    <img src="./images/brand1.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./images/brand6.png" alt="">
+                    <img src="./images/brand6.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./images/brand3.png" alt="">
+                    <img src="./images/brand3.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./images/brand4.png" alt="">
+                    <img src="./images/brand4.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-2 col-md-3 col-4">
-                    <img src="./images/brand5.png" alt="">
+                    <img src="./images/brand5.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -310,19 +353,29 @@
         </div>
     </section>
 
-    <section class="review">
-        <div class="container">
-            <div class="title">
-                <p> </p>
-                <h2></h2>
+    <section class="review py-5">
+        <div class="container py-lg-4 py-md-3 py-2 pb-lg-0">
+            <div class="title text-center">
+                <p>HAPPY CLIENTS FEEDBACK</p>
+                <h2>Reviews and Testimonials</h2>
             </div>
-            <div class="review_content">
-                <p></p>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-        </div>
+            <div class="review-with">
+                <div class="owl-carousel review_content">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                        voluptatibus esse quasi, doloribus tempora.
+                        Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Esse architecto est ea sunt eligendi cum?</p>
+                    <div class="review-des">
+                        <div class="review-image">
+                            <img src="./images/team1.jpg" alt="">
+                        </div>
+                        <div class="review-text">
+                            <h4>John wilson</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
     </section>
 
     <section class="blog">
@@ -335,7 +388,25 @@
         </div>
     </section>
 
-    <section class="subscribe"></section>
+    <section class="subscribe py-5">
+        <div class="container py-md-5 py-sm-4 py-2">
+            <div class="info">
+                <div class="header-section text-center">
+                    <h3 class="text-white">Let’s find out how to work together</h3>
+                    <p class="pt-3" >Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet.</br> Lorem
+                        ipsum dolor sit amet elit.</p>
+                </div>
+            </div>
+            <form class="pt-4">
+                <div class="form-group">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <input type="email" placeholder="Your email address">
+                    <button class="btn-success">Subcribe</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
 
     <footer>
         <div class="container">
@@ -358,6 +429,35 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- slick slider  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel-slider').slick({
+
+            });
+        });
+    </script>
+
+
+    <!-- Owl Carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./owlcarousel/jquery.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
+
+
 </body>
 
 </html>
