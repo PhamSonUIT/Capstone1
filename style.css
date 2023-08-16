@@ -10,20 +10,7 @@ p{
 }
 
 /* header  */
-.title h2{
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #3f3a64;
-    line-height: 1.2;
-}
 
-.title h2 {
-    color: #9c97c1;
-}
-
-.title p {
-    color: #7e7d7d;
-}
 .button{
     color: #fff;
     background-color: #00a63f;
@@ -449,3 +436,30 @@ header .navbar .navbar-nav .nav-item .nav-link{
         border-radius: 0 10px 10px 0;
         font-size: 16px;
     }
+
+.blog .card-group .card{
+   /* display: flex; */
+   margin: 3%;
+   border-radius: 20px;
+   overflow: hidden;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.card-footer .footer-link{
+ margin-right: 12%;
+}
+.card-footer .footer-date{
+    margin-top: 4%;
+}
+.blog .title{
+    text-align: center;
+}
+
+
+
+
+
