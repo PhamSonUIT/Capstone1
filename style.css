@@ -33,9 +33,20 @@ header {
   transition: all 0.5s;
 }
 
+header.main-header{ 
+  padding: 0px;
+  transition: all 0.4s ease 0s;
+  height: 100px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  z-index: 10;
+  border-bottom: 1px solid #ffffff30;
+  position: fixed;
+}
+
 .navbar {
-    position: fixed;
-    width: 100%;
+  width: 100%;
 }
 
 .navbar .navbar-brand i {
@@ -58,6 +69,21 @@ header .navbar .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   color: white;
 }
+header .navbar .navbar-nav .icon1 i {
+  color: white;
+  padding: 10px 12px;
+  background-color: green;
+  border-radius: 100%;
+  margin-left: 85px;
+  cursor: pointer;
+}
+header .navbar .navbar-nav .icon2 i {
+  color: white;
+  padding: 10px 12px;
+  border-radius: 100%;
+  margin-left: 15px;
+  cursor: pointer;
+}
 
 /* Carousel  */
 
@@ -73,24 +99,44 @@ header .navbar .navbar-nav .nav-item .nav-link {
   background-repeat: no-repeat;
 }
 
-.slick-prev::before{
-
-}
-.carousel-slider .slick-arrow{
+.slick-prev {
   position: absolute;
-  bottom: 50px;
-  font-size: 0;
+  left: 87%;
+  top: 90%;
+  z-index: 1;
+}
+
+.slick-prev::before {
+  padding: 10px 10px;
+  color: #3f3a64;
+  background-color: white;
+  font-size: 25px;
+  border-radius: 100%;
+  outline: none;
+  box-shadow: 0 0 15px;
+  text-align: center;
+  line-height: 1.4px;
+}
+
+.slick-next::before {
+  padding: 10px 10px;
+  color: #3f3a64;
+  background-color: white;
+  font-size: 25px;
+  border-radius: 100%;
+  outline: none;
+  box-shadow: 0 0 15px;
+  text-align: center;
+  line-height: 1.4px;
+}
+.slick-next {
+  position: absolute;
+  right: 60px;
+  top: 90%;
   width: 50px;
   height: 50px;
-  outline: none;
-  border-radius: 100%;
-  box-shadow: 0 0 15px;
-  border: 1px solid;
+  z-index: 1;
 }
-.carousel-slider .slick-arrow .slick-prev{
-  right: 25px;
-}
-
 
 .carousel-content {
   position: absolute;
@@ -123,17 +169,21 @@ header .navbar .navbar-nav .nav-item .nav-link {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #041529bd;
+  background-color: #0415298a;
 }
 .shape {
   position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 
 .shape svg {
   width: 100%;
+}
+
+.shape svg path {
+  fill: white;
 }
 /* Work  */
 
@@ -269,6 +319,11 @@ header .navbar .navbar-nav .nav-item .nav-link {
   text-align: left;
   gap: 30px;
 }
+
+.owl-stage .owl-item:active {
+  position: absolute;
+  left: 400px
+}
 .review-image {
   width: 80px;
   height: 80px;
@@ -284,6 +339,14 @@ header .navbar .navbar-nav .nav-item .nav-link {
 
 .owl-stage {
   display: flex;
+}
+.owl-stage-outer{
+  position: relative;
+}
+
+.owl-stage .owl-item:active {
+  position: absolute;
+    left: 385px;
 }
 
 /* .owl-item{
