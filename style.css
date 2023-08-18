@@ -8,6 +8,7 @@
 
 p {
     color: grey;
+    font-size: 18px;
 }
 
 /* header  */
@@ -511,4 +512,69 @@ form {
 
 .blog .title {
     text-align: center;
+}
+
+hr {
+    margin: 0;
+}
+
+.container .footer-content {
+    display: flex;
+    width: 20%;
+}
+
+.footer-info,
+.footer-contact,
+.footer-categories {
+    margin-right: 5%;
+    padding: 5%;
+}
+
+.footer-content a {
+    color: grey;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.footer-content a:hover {
+    color: white;
+}
+
+.footer-info .logo span {
+    font-size: 3rem;
+}
+
+.footer-info .logo {
+    position: relative;
+}
+
+.footer-info .logo i {
+    font-size: 2rem;
+    /* position: absolute; */
+    /* top: 20%;
+    left: -10% */
+}
+
+.footer-info .logo p {
+    font-size: 2rem;
+}
+
+.social-media i {
+    margin-right: 5%;
+    font-size: 2rem;
+    transition: all 0.5s;
+}
+
+.footer-info p {
+    font-size: 1.3rem;
+}
+
+.footer-item h5 {
+    font-size: 22px;
+    color: white;
+    margin-top: 5%;
+}
+
+.footer-item a {
+    color: grey;
 }
