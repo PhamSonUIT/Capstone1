@@ -616,6 +616,31 @@ form {
     font-size: 16px;
 }
 
+.blog .card-group .card {
+    /* display: flex; */
+    margin: 3%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card-footer .footer-link {
+    margin-right: 12%;
+}
+
+.card-footer .footer-date {
+    margin-top: 4%;
+}
+
+.blog .title {
+    text-align: center;
+}
+
 hr {
     margin: 0;
 }
