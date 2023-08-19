@@ -314,50 +314,6 @@ header .navbar .navbar-nav .icon2 i {
     font-size: 1.2rem;
 }
 
-/* Service  */
-.services-info a {
-    font-weight: bold;
-    font-size: 20px;
-    color: #3f3a64;
-    text-decoration: none;
-    border: 1px solid #00000005;
-    border-radius: 5px;
-    padding: 12px 35px;
-    background-color: white;
-    position: relative;
-    top: -15px;
-    box-shadow: 0 0 15px 0 #00000012;
-}
-
-.service-image {
-    border-radius: 10px;
-}
-
-.services-info p {
-    color: grey;
-    font-weight: 400;
-    padding: 15px 30px;
-    font-size: 17px;
-}
-
-.services-info button {
-    font-weight: bold;
-    color: #3f3a64;
-    background-color: transparent;
-    border: none;
-    margin-top: -20px;
-    line-height: 28px;
-}
-
-.services-info a:hover {
-    color: green;
-}
-
-.services-info button:hover {
-    color: green;
-    background-color: transparent;
-}
-
 /* Review  */
 .review {
     background-color: #f7f7f7;
