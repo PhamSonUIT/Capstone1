@@ -680,6 +680,18 @@ footer .navbar-brand p {
     transition: all 0.5s;
 }
 
+.backtop {
+    color: white;
+    background-color: #008030;
+    padding: 1%;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+}
+
 .cd-top--is-visible {
     visibility: visible;
     opacity: 1;

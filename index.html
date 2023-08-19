@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+<head id="header">
     <link rel="website icon" type="jpeg" href="./images/328cc1f23e4a3b73aa60ee6ced1897a1.jpeg">
     <title>Corp Vision - Vision to your future</title>
     <!-- Required meta tags -->
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- <link rel="stylesheet" href="./back-to-top-master/assets/css/style.css"> -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -621,7 +621,9 @@
         </div>
     </footer>
 
-    <a href="#" class="cd-top text-replace js-cd-top">Top</a>
+    <a href="#header" class="backtop cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
 
 
 
@@ -674,6 +676,10 @@
             $(".owl-carousel").owlCarousel();
         });
     </script>
+    <!-- back to top -->
+    <script src="./back-to-top-master/assets/js/util.js"></script>
+    <script src="./back-to-top-master/assets/js/main.js"></script>
+
 
 
 </body>
