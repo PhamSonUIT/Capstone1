@@ -151,7 +151,6 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="slick-prev">Previous</button>
         </div>
         <div class="shape">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
@@ -165,10 +164,6 @@
         </div>
         </div>
     </section>
-
-
-
-
 
     <section class="aboutUS">
         <div class="container">
@@ -236,39 +231,49 @@
             </div>
         </div>
     </section>
-
-    <section class="service text-center">
+    <section class="service text-center py-5">
         <div class="container">
-            <div class="title">
+            <div class="title pt-5 pb-5">
                 <h2>Always there for your care, our Services</h2>
             </div>
-            <div class="services-content">
-                <div class="sevices-item">
-                    <a href="">
-                        <img src="./images/s1.jpg" alt="">
-                    </a>
-                    <button class="btn btn-light">Work Expertise</button>
-                    <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
-                    <button class="btn btn-light">Learn More</button>
+            <div class="services-content d-flex justify-content-center text-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="sevices-item">
+                        <a href="">
+                            <img src="./images/s1.jpg" alt="" class="img-fluid service-image">
+                        </a>
+                        <div class="services-info">
+                            <a href="#">Work Expertise</a>
+                            <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+                            <button class="btn btn-light">Learn More</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="sevices-item">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <h3></h3>
-                    <p></p>
-                    <button></button>
+                <div class="col-lg-4 col-md-6">
+                    <div class="sevices-item">
+                        <a href="">
+                            <img src="./images/s2.jpg" alt="" class="img-fluid service-image">
+                        </a>
+                        <div class="services-info">
+                            <a href="#">Product Development</a>
+                            <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+                            <button class="btn btn-light">Learn More</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="sevices-item">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <h3></h3>
-                    <p></p>
-                    <button></button>
+                <div class="col-lg-4 col-md-6">
+                    <div class="sevices-item">
+                        <a href="">
+                            <img src="./images/s3.jpg" alt="" class="img-fluid service-image">
+                        </a>
+                        <div class="services-info">
+                            <a href="#">Software Development</a>
+                            <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
+                            <button class="btn btn-light">Learn More</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -279,7 +284,6 @@
                 <h2>Successful projects we've done</h2>
             </div>
             <div class="gallery_content mt-5">
-                <!-- các item còn lại e đưa div overlay vào bên trong thẻ a luôn nha, e check lại code của thư viện, có thiếu những button để close lại hay ko? -->
                 <div class="gallery-item">
                     <div class="gallery-img">
                         <a href="./images/c1.jpg" data-lightbox="image" data-title="Project1">
@@ -359,7 +363,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-logo pt-5 mt-5 d-flex justify-content-center">
+            <div class="row gallery-logo pt-5 mt-5 d-flex justify-content-center">
                 <div class="col-lg-2 col-md-3 col-4">
                     <img src="./images/brand1.png" alt="" class="img-fluid">
                 </div>
@@ -425,51 +429,71 @@
                 <h2>Reviews and Testimonials</h2>
             </div>
             <div class="review-with">
-                <div class="owl-carousel review_content">
-                    <!-- <p>
-                        Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
-                        voluptatibus esse quasi, doloribus tempora.
-                        Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Esse architecto est ea sunt eligendi cum?</p> -->
-                    <div class="review-des">
-                        <div class="review-image">
-                            <img src="./images/team1.jpg" alt="">
-                        </div>
-                        <div class="review-text">
-                            <h4>John wilson</h4>
-                            <p>Student</p>
-                        </div>
-                    </div>
-                    <div class="review-des">
-                        <div class="review-image">
-                            <img src="./images/team2.jpg" alt="">
-                        </div>
-                        <div class="review-text">
-                            <h4>John wilson</h4>
-                            <p>Student</p>
+                <div class="owl-carousel owl-theme review-item">
+                    <div class="review-content">
+                        <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                            voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!.
+                        </p>
+                        <div class="review-des">
+                            <div class="review-image">
+                                <img src="./images/team1.jpg" alt="">
+                            </div>
+                            <div class="review-text">
+                                <h4>John wilson</h4>
+                                <p>Student</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="review-des">
-                        <div class="review-image">
-                            <img src="./images/team3.jpg" alt="">
-                        </div>
-                        <div class="review-text">
-                            <h4>John wilson</h4>
-                            <p>Student</p>
+                    <div class="review-content">
+                        <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                            voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!.
+                        </p>
+                        <div class="review-des">
+                            <div class="review-image">
+                                <img src="./images/team2.jpg" alt="">
+                            </div>
+                            <div class="review-text">
+                                <h4>Julia sakura</h4>
+                                <p>Student</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="review-des">
-                        <div class="review-image">
-                            <img src="./images/team4.jpg" alt="">
+                    <div class="review-content">
+                        <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                            voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!.
+                        </p>
+                        <div class="review-des">
+                            <div class="review-image">
+                                <img src="./images/team3.jpg" alt="">
+                            </div>
+                            <div class="review-text">
+                                <h4>Roy Linderson</h4>
+                                <p>Student</p>
+                            </div>
                         </div>
-                        <div class="review-text">
-                            <h4>John wilson</h4>
-                            <p>Student</p>
+                    </div>
+                    <div class="review-content">
+                        <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                            voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!.
+                        </p>
+                        <div class="review-des">
+                            <div class="review-image">
+                                <img src="./images/team4.jpg" alt="">
+                            </div>
+                            <div class="review-text">
+                                <h4>Smith Johnson</h4>
+                                <p>Student</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
-
     <section class="blog">
         <div class="container">
             <div class="title">
@@ -490,7 +514,7 @@
                         ipsum dolor sit amet elit.</p>
                 </div>
             </div>
-            <form class="pt-4">
+            <form class="subcribe-group pt-4">
                 <div class="form-group">
                     <i class="fa-regular fa-paper-plane"></i>
                     <input type="email" placeholder="Your email address">
@@ -501,12 +525,6 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-contetn"></div>
-            <div class="footer-copyright"></div>
-        </div>
-    </footer>
 
 
 
@@ -555,7 +573,13 @@
 
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel();
+            $(".owl-carousel").owlCarousel({
+                responsive: {
+                    0: {
+                        items: 1,
+                    }
+                }
+            });
         });
     </script>
 
