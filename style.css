@@ -442,6 +442,7 @@ ul li {
 .progress-bar p span {
     position: absolute;
     right: 0;
+    color: grey;
 }
 
 #progress .container {
@@ -531,7 +532,8 @@ ul li {
 }
 
 .blog .card-group .card {
-    /* display: flex; */
+    display: flex;
+    width: 30%;
     margin: 3%;
     border-radius: 20px;
     overflow: hidden;
@@ -545,6 +547,7 @@ ul li {
 
 .card-footer .footer-link {
     margin-right: 12%;
+    width: 100%;
 }
 
 .card-footer .footer-date {
