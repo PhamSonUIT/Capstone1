@@ -165,6 +165,14 @@ ul li {
     margin: 3%;
     border-radius: 20px;
     overflow: hidden;
+    border: none;
+    box-shadow: #7e7d7d
+}
+
+.blog .card-group .card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
 }
 
 .card-footer {
