@@ -679,3 +679,12 @@ footer .navbar-brand p {
     color: white;
     transition: all 0.5s;
 }
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    opacity: .5;
+}
