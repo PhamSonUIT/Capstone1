@@ -75,6 +75,13 @@ ul li {
     }
 }
 
+/* header  */
+header {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #ffffff45;
+}
+
 .title h2 {
     font-size: 2.2rem;
     font-weight: 700;
@@ -295,13 +302,81 @@ header .navbar .navbar-nav .nav-item .nav-link {
     padding-bottom: 80px;
 }
 
-.overlay-text h4 {
-    font-weight: 800;
-    font-size: 1.6rem;
+/* Service  */
+.services-info a {
+    font-weight: bold;
+    font-size: 20px;
+    color: #3f3a64;
+    text-decoration: none;
+    border: 1px solid #00000005;
+    border-radius: 5px;
+    padding: 12px 35px;
+    background-color: white;
+    position: relative;
+    top: -15px;
+    box-shadow: 0 0 15px 0 #00000012;
 }
 
-.overlay-text p {
-    font-size: 1.2rem;
+.service-image {
+    border-radius: 10px;
+}
+
+.services-info p {
+    color: grey;
+    font-weight: 400;
+    padding: 15px 30px;
+    font-size: 17px;
+}
+
+.services-info button {
+    font-weight: bold;
+    color: #3f3a64;
+    background-color: transparent;
+    border: none;
+    margin-top: -20px;
+    line-height: 28px;
+}
+
+.services-info a:hover {
+    color: green;
+}
+
+.services-info button:hover {
+    color: green;
+    background-color: transparent;
+}
+
+.progress-bar {
+    background-color: white;
+}
+
+.progress-bar p {
+    background-color: white;
+    text-align: left;
+    position: relative;
+}
+
+.progress {
+    height: 5px;
+    margin-bottom: 5%;
+}
+
+.progress-bar p span {
+    position: absolute;
+    right: 0;
+}
+
+#progress .container {
+    display: flex;
+    /* width: 50%; */
+}
+
+.progress-left img {
+    width: 100%;
+}
+
+.progress-right {
+    margin-left: 5%;
 }
 
 /* Review  */
@@ -315,6 +390,24 @@ header .navbar .navbar-nav .nav-item .nav-link {
     justify-content: center;
     text-align: left;
     gap: 30px;
+}
+
+.review-content {
+    display: block;
+    padding: 40px 30px;
+    position: relative;
+    border: none;
+    max-width: 900px;
+    margin: auto;
+}
+
+.review-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: grey;
+    opacity: 0.8;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .review-image {
@@ -334,22 +427,28 @@ header .navbar .navbar-nav .nav-item .nav-link {
     display: flex;
 }
 
-/* .owl-item{
-    
-    } */
-/* .owl-stage-outer{
-        position: relative;
-        overflow: hidden;
-    } */
-/* .owl-carousel .owl-stage::after{
-        content: "";
-        display: block;
-        clear: both;
-        height: 0;
-        line-height: 0;
-        visibility: hidden;
-        width: 100%;
-    } */
+.owl-nav {
+    visibility: hidden;
+}
+
+.owl-dot {
+    background: transparent;
+    border: none;
+    border-radius: none;
+}
+
+/* .owl-theme .owl-dots .owl-dot span:hover{
+    color: red;
+    opacity: 1;
+  } */
+.review-item .owl-nav {
+    text-align: center;
+}
+
+.review-item .owl-nav .owl-prev {
+    margin-right: 15px;
+}
+
 .review_content p {
     font-size: 18px;
     line-height: 1.8;
