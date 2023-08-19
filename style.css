@@ -8,6 +8,7 @@
 
 p {
     color: grey;
+    font-size: 18px;
 }
 
 /* header  */
@@ -511,4 +512,146 @@ form {
 
 .blog .title {
     text-align: center;
+}
+
+hr {
+    margin: 0;
+}
+
+/* Footer  */
+footer {
+    background-color: #151421;
+    border-top: 1px solid #ffffff30;
+}
+
+footer .navbar-brand i {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+footer .navbar-brand span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+footer .navbar-brand p {
+    font-weight: 600;
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.footer-list p {
+    color: #808080d9;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.social-media a {
+    color: grey;
+    margin-right: 10px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+
+.social-media a i:hover {
+    color: white;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.footer-contact h5 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.footer-contact ul {
+    list-style: none;
+}
+
+.footer-contact li p {
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-contact li p a {
+    text-decoration: none;
+    color: grey;
+    transition: all 0.5s;
+}
+
+.footer-contact li p a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.footer-categories h5 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.footer-categories ul {
+    list-style: none;
+}
+
+.footer-categories li p a {
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-categories li p a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.footer-meta h5 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.footer-meta ul {
+    list-style: none;
+}
+
+.footer-meta li p a {
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-meta li p a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.copyRight {
+    border-top: 1px solid #ffffff36;
+    padding-top: 40px;
+}
+
+.copyRight p {
+    color: grey;
+    font-size: 18px;
+}
+
+.copyRight p a {
+    font-size: 19px;
+    color: green;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.copyRight p a:hover {
+    color: white;
+    transition: all 0.5s;
 }
