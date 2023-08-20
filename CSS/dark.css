@@ -1,0 +1,37 @@
+.dark{
+    background-color: black;
+}
+.dark .shape svg path {
+    fill:#151421;
+}
+.dark .carousel-overlay{
+    background-color:#041529b8;
+}
+.dark .work {
+    background-color: black;
+}
+
+.dark .item{
+    background-color: #151421;
+}
+.dark .work-right .item h4 a {
+    color: white;
+}
+.dark .work-left .title h2{
+    color: white;
+}
+.dark .gallery{
+    background-color: #100f19;
+}
+.dark .gallery .title h2{
+    color: white;
+}
+.dark .review {
+    background-color: #100f19;
+}
+.dark .review-text h4{
+    color: white;
+}
+.dark .review .title h2{
+    color: white;
+}
