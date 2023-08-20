@@ -21,7 +21,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Light box  -->
-    <link rel="stylesheet" href="/Lightbox/lightbox.min.js">
+    <!-- <link rel="stylesheet" href="/Lightbox/lightbox.min.js"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+        integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <link href="
+https://cdn.jsdelivr.net/npm/imagelightbox@1.2.0/dist/imagelightbox.min.css
+" rel="stylesheet">
 
     <!-- Animate  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -35,9 +45,10 @@
 
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/dark.css">
+    <link rel="stylesheet" href="./index.js">
 </head>
 
-<body>
+<body id="body" class="">
     <header class="main-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -76,13 +87,14 @@
                             <i class="fa-solid fa-magnifying-glass fa-1x"></i>
                         </li>
                         <li class="icon2">
-                            <i class="fa-regular fa-moon fa-1x"></i>
-                        </li>
+                            <i id="btnLight" class="fa-regular fa-sun"></i>
+                        </li></button>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+
     <section class="carousel">
         <div class="carousel-slider">
             <div class="carousel-banner">
@@ -290,7 +302,7 @@
             <div class="gallery_content mt-5">
                 <div class="gallery-item">
                     <div class="gallery-img">
-                        <a href="./images/c1.jpg" data-lightbox="image" data-title="Project1">
+                        <a href="./images/c1.jpg" data-imagelightbox="images" data-ilb2-caption="caption text">
                             <img src="./images/c1.jpg" alt="">
                             <div class="overlay">
                                 <div class="overlay-text">
@@ -303,7 +315,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-img">
-                        <a href="./images/c2.jpg" data-lightbox="image" data-title="Project2">
+                        <a href="./images/c2.jpg" data-fancybox="gallery" data-caption="Single image">
                             <img src="./images/c2.jpg" alt="">
                             <div class="overlay">
                                 <div class="overlay-text">
@@ -479,8 +491,7 @@
                     </div>
                     <div class="review-content">
                         <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
-                            voluptatibus esse quasi, doloribus tempora.
-                            Dolores molestias adipisci dolo amet!.
+                            voluptatibus esse quasi, doloribus tempora.Dolores molestias adipisci dolo amet!.
                         </p>
                         <div class="review-des">
                             <div class="review-image">
@@ -508,7 +519,8 @@
                 </a>
                 <div class="card-body">
                     <p class="card-title">Startup Business</p>
-                    <a class="card-text">Hello world!</a>
+                    <a class="card-text" href="https://wp.w3layouts.com/corpvision/2021/04/01/hello-world/">Hello
+                        world!</a>
                 </div>
                 <div class="card-footer">
                     <div class="footer-link">
@@ -530,7 +542,9 @@
                 </a>
                 <div class="card-body">
                     <p class="card-title">Startup Business</p>
-                    <a class="card-text">Companies in NY launched a joint project on a three-tower hall</a>
+                    <a class="card-text"
+                        href="https://wp.w3layouts.com/corpvision/2021/04/01/companies-in-ny-launched-a-joint-project-on-a-three-tower-hall/">Companies
+                        in NY launched a joint project on a three-tower hall</a>
                 </div>
                 <div class="card-footer">
                     <div class="footer-link">
@@ -552,7 +566,9 @@
                 </a>
                 <div class="card-body">
                     <p class="card-title">Marketing Strategy</p>
-                    <a class="card-text">Design breakthrough upgrades the product and ready to launch</a>
+                    <a class="card-text"
+                        href="https://wp.w3layouts.com/corpvision/2021/04/01/design-breakthrough-upgrades-the-product-and-ready-to-launch/">Design
+                        breakthrough upgrades the product and ready to launch</a>
                 </div>
                 <div class="card-footer">
                     <div class="footer-link">
@@ -687,6 +703,7 @@
 
 
 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -712,14 +729,29 @@
             cssEase: 'linear'
         })
     </script>
-
     <!-- Light Box  -->
-    <script src="./Lightbox/lightbox.js"></script>
+    <!-- <script src="./Lightbox/lightbox.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         lightbox.option({
             alwaysShowNavOnTouchDevices: true
         })
+    </script> -->
+    <script src="
+https://cdn.jsdelivr.net/npm/imagelightbox@1.2.0/dist/imagelightbox.min.js
+"></script>
+
+    <script>
+        $(function () {
+            $('a[data-imagelightbox="images"]').imageLightbox({
+                history: true
+            });
+        });
     </script>
+
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
 
 
     <!-- Owl Carousel  -->
@@ -730,14 +762,19 @@
     <script src="./owlcarousel/owl.carousel.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                responsive: {
-                    0: {
-                        items: 1,
-                    }
+        $(".owl-carousel").owlCarousel({
+            touchDrag: false,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1,
                 }
-            });
+            }
         });
     </script>
+
+
+    <script src="./index.js"></script>
 </body>
+
+</html>
