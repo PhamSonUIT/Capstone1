@@ -213,6 +213,8 @@ ul li {
     list-style: none;
     color: #3f3a64;
     margin-bottom: 5%;
+    font-weight: bolder;
+    color: #151421;
 }
 
 ul li i {
@@ -227,6 +229,10 @@ ul li i {
     margin-top: 5%;
     justify-content: center;
     align-items: center;
+}
+
+.aboutUS .container .content p {
+    color: grey;
 }
 
 .aboutUS-right {
@@ -569,8 +575,10 @@ ul li i {
     overflow: hidden;
 }
 
-.blog .card-group .card a {
+.card-group .card a {
     color: #151421;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 .card-footer {
