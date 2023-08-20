@@ -25,7 +25,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Light box  -->
-    <link rel="stylesheet" href="/Lightbox/lightbox.min.js">
+    <!-- <link rel="stylesheet" href="/Lightbox/lightbox.min.js"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fancybox -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
+
+<link href="
+https://cdn.jsdelivr.net/npm/imagelightbox@1.2.0/dist/imagelightbox.min.css
+" rel="stylesheet">
 
     <!-- Animate  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -37,11 +48,12 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./index-dark.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/dark.css">
+    <link rel="stylesheet" href="./index.js">
 </head>
 
-<body>
+<body id="body" class="" >
     <header class="main-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -80,8 +92,8 @@
                             <i class="fa-solid fa-magnifying-glass fa-1x"></i>
                         </li>
                         <li class="icon2">
-                            <i class="fa-regular fa-moon fa-1x"></i>
-                        </li>
+                            <i id="btnLight" class="fa-regular fa-sun"></i>
+                        </li></button>
                     </ul>
                 </div>
             </nav>
@@ -217,7 +229,7 @@
             <div class="gallery_content mt-5">
                 <div class="gallery-item">
                     <div class="gallery-img">
-                        <a href="./images/c1.jpg" data-lightbox="image" data-title="Project1">
+                        <a href="./images/c1.jpg" data-imagelightbox="images" data-ilb2-caption="caption text">
                             <img src="./images/c1.jpg" alt="">
                             <div class="overlay">
                                 <div class="overlay-text">
@@ -230,7 +242,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-img">
-                        <a href="./images/c2.jpg" data-lightbox="image" data-title="Project2">
+                        <a href="./images/c2.jpg" data-fancybox="gallery" data-caption="Single image">
                             <img src="./images/c2.jpg" alt="">
                             <div class="overlay">
                                 <div class="overlay-text">
@@ -436,24 +448,30 @@
             cssEase: 'linear'
         })
     </script>
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                responsive: {
-                    0: {
-                        items: 1,
-                    }
-                }
-            });
-        });
-    </script>
     <!-- Light Box  -->
-    <script src="./Lightbox/lightbox.js"></script>
+    <!-- <script src="./Lightbox/lightbox.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         lightbox.option({
             alwaysShowNavOnTouchDevices: true
         })
-    </script>
+    </script> -->
+    <script src="
+https://cdn.jsdelivr.net/npm/imagelightbox@1.2.0/dist/imagelightbox.min.js
+"></script>
+
+<script>
+    $( function()
+    {
+        $('a[data-imagelightbox="images"]').imageLightbox({
+            history: true
+        });
+    });
+</script>
+
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
 
 
     <!-- Owl Carousel  -->
@@ -464,15 +482,18 @@
     <script src="./owlcarousel/owl.carousel.min.js"></script>
 
     <script>
-        $(document).ready(function () {
             $(".owl-carousel").owlCarousel({
+                touchDrag: false,
+                loop:true,
                 responsive: {
                     0: {
                         items: 1,
                     }
                 }
             });
-        });
     </script>
+    
+
+    <script src="./index.js"></script>
 </body>
 </html>
